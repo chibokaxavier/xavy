@@ -11,18 +11,13 @@ const buttonVariants = cva(
       variant: {
         default: "bg-accent text-primary hover:bg-accent-hover",
         primary: "bg-primary text-white",
-        outline: "border border-accent bg-transparent text-accent",
-        secondary:
-          "bg-slate-100 text-slate-900 hover:bg-slate-100/80 dark:bg-slate-800 dark:text-slate-50 dark:hover:bg-slate-800/80",
-        ghost:
-          "hover:bg-slate-100 hover:text-slate-900 dark:hover:bg-slate-800 dark:hover:text-slate-50",
-        link: "text-slate-900 underline-offset-4 hover:underline dark:text-slate-50",
+        outline:
+          "border border-accent bg-transparent text-accent hover:bg-accent  hover:text-primary",
       },
       size: {
-        default: "h-10 px-4 py-2",
-        sm: "h-9 rounded-md px-3",
-        lg: "h-11 rounded-md px-8",
-        icon: "h-10 w-10",
+        default: "h-[44px] px-6",
+        sm: "h-[48px] px-6",
+        lg: "h-[56px] px-8 text-sm uppercase tracking-[30px]",
       },
     },
     defaultVariants: {
