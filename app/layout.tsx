@@ -4,6 +4,7 @@ import "./globals.css";
 import Header from "@/components/Header";
 import PageTransition from "@/components/PageTransition";
 import StairTransition from "@/components/StairTransition";
+import Head from "next/head";
 
 const jetBrainsMono = JetBrains_Mono({
   subsets: ["latin"],
@@ -22,6 +23,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <Head>
+        <link rel="icon" href="/logo.png" />
+        {/* You can also use other favicon formats */}
+        {/* <link rel="icon" type="image/png" href="/favicon.png" /> */}
+        {/* <link rel="icon" type="image/svg+xml" href="/favicon.svg" /> */}
+      </Head>
       <body className={jetBrainsMono.variable}>
         <Header />
         <StairTransition />

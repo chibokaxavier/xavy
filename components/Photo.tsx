@@ -5,11 +5,39 @@ import Image from "next/image";
 
 const Photo = () => {
   return (
-    <div>
-      <motion.div>
-        <div>
-          <Image src="/photo.png" alt="photo" width={1000} height={1000}/>
-        </div>
+    <div className="w-full h-full relative">
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{
+          opacity: 1,
+          transition: {
+            duration: 0.4,
+            ease: "easeIn",
+            delay: 2,
+          },
+        }}
+      >
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{
+            opacity: 1,
+            transition: {
+              duration: 0.4,
+              ease: "easeInOut",
+              delay: 2.4,
+            },
+          }}
+          className="w-[298px] h-[298px] xl:w-[498px] xl:h-[498px] mix-blend-lighten"
+        >
+          <Image
+            src="/dev.gif"
+            alt="photo"
+            priority
+            fill
+            className="object-contain"
+            quality={100}
+          />
+        </motion.div>
       </motion.div>
     </div>
   );
