@@ -12,7 +12,7 @@ export default function Home() {
             <div className="text-center xl:text-left">
               <span className="">Software Developer</span>
               <h1 className="h1 mb-6 mt-10">
-                Hello i'm <br />{" "}
+                Hello i&apos;m <br />{" "}
                 <span className="text-accent">Emmanuel Chiboka</span>{" "}
               </h1>
               <p className="max-w-[500px] mb-9 text-white/80 ">
@@ -36,7 +36,9 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div><Photo/></div>
+            <div>
+              <Photo />
+            </div>
           </div>
         </div>
       </section>
