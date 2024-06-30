@@ -36,6 +36,7 @@ const Photo = () => {
             fill
             className="object-contain"
             quality={100}
+            unoptimized
           />
         </motion.div>
       </motion.div>
