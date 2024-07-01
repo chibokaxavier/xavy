@@ -27,7 +27,7 @@ const Photo = () => {
               delay: 2.4,
             },
           }}
-          className="w-[298px] h-[298px] xl:w-[498px] xl:h-[498px] mix-blend-lighten"
+          className="w-[298px] h-[298px] xl:w-[498px] xl:h-[498px] "
         >
           <Image
             src="/dev.gif"
