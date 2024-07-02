@@ -1,7 +1,7 @@
 "use client";
 import { Section } from "lucide-react";
 import React from "react";
-import CountUp from "react-countUp";
+import CountUp from "react-countup";
 const Stat = [
   { num: 3, text: "Years of Experience" },
   { num: 15, text: "Projects Completed" },
