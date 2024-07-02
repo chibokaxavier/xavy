@@ -13,7 +13,7 @@ const services = [
   },
   {
     num: "02",
-    title: "User interface/Experience",
+    title: "UI/UX",
     href: "",
     Description:
       "I ensure your website reflects your brand identity through meticulous attention to visual details, crafting cohesive and appealing designs. I focus on intuitive, engaging user experiences by carefully designing navigation, information architecture, and interactions to meet user needs and effectively communicate your message.",
@@ -44,15 +44,22 @@ const Services = () => {
             return (
               <div key={index} className="flex flex-1  gap-6 group flex-col">
                 <div className="w-full flex justify-between items-center">
-                  <div className="text-5xl font-extrabold">{service.num}</div>
-                  <Link href={service.href}>
-                    <BsArrowDownRight />
+                  <div className="text-5xl font-extrabold text-outline text-transparent group-hover:text-outline-hover transition-all duration-500">
+                    {service.num}
+                  </div>
+                  <Link
+                    href={service.href}
+                    className="w-[70px] h-[70px] rounded-full bg-white group-hover:bg-accent transition-all duration-500 flex justify-center hover:-rotate-45 items-center"
+                  >
+                    <BsArrowDownRight className="text-3xl text-primary" />
                   </Link>
                 </div>
-                <h2>{service.title}</h2>
+                <h2 className="text-[42px] leading-none text-white font-bold transition-all duration-500 group-hover:text-accent ">
+                  {service.title}
+                </h2>
 
-                <p className="">{service.Description}</p>
-                <div className="border-b border-white/20 w-full" />
+                <p className="text-white/60">{service.Description}</p>
+                <div className="border-b border-white/20 w-full mb-10" />
               </div>
             );
           })}
