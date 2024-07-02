@@ -13,17 +13,17 @@ const services = [
   },
   {
     num: "02",
+    href: "",
+    title: "SEO",
+    Description:
+      "Unlock the full  potential of your website with our cutting-edge SEO services. I drive organic traffic, improve search rankings, and enhance user experience with tailored strategies. From precise keyword research and on-page SEO to technical SEO for site speed and mobile responsiveness, we boost the visibility and traffic of your brand. Achieve higher visibility and sustainable growth with our expert solutions. Let us get started today!",
+  },
+  {
+    num: "03",
     title: "UI/UX",
     href: "",
     Description:
       "I ensure your website reflects your brand identity through meticulous attention to visual details, crafting cohesive and appealing designs. I focus on intuitive, engaging user experiences by carefully designing navigation, information architecture, and interactions to meet user needs and effectively communicate your message.",
-  },
-  {
-    num: "03",
-    href: "",
-    title: "SEO",
-    Description:
-      "Unlock your website's potential with our cutting-edge SEO services. I drive organic traffic, improve search rankings, and enhance user experience with tailored strategies. From precise keyword research and on-page SEO to technical SEO for site speed and mobile responsiveness, we boost your brand's visibility and traffic. Achieve higher visibility and sustainable growth with our expert solutions. Let's start today!",
   },
 ];
 
@@ -35,7 +35,7 @@ const Services = () => {
           initial={{ opacity: 0 }}
           animate={{
             opacity: 1,
-            transition: { delay: 2.4, duration: 0.4, ease: easeIn },
+            transition: { delay: 2.4, duration: 0.4, ease: "easeIn" },
           }}
           className="grid grid-cols-1 md:grid-cols-2 gap-[60px]
           "
