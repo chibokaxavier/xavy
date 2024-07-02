@@ -144,13 +144,17 @@ const Resume = () => {
       className="min-h-[80vh] flex items-center justify-center py-12 xl:py-0"
     >
       <div className="mx-auto container">
-        <Tabs defaultValue={experience} className="flex flex-col xl:flex-row">
+        <Tabs
+          defaultValue="experience"
+          className="flex flex-col xl:flex-row gap-[60px]"
+        >
           <TabsList>
-            <TabsTrigger>Experience</TabsTrigger>
-            <TabsTrigger>Skills</TabsTrigger>
-            <TabsTrigger>Education</TabsTrigger>
-            <TabsTrigger>About me</TabsTrigger>
+            <TabsTrigger value="tab1">Experience</TabsTrigger>
+            <TabsTrigger value="tab2">Skills</TabsTrigger>
+            <TabsTrigger value="tab3">Education</TabsTrigger>
+            <TabsTrigger value="tab4">About me</TabsTrigger>
           </TabsList>
+          <div>Content</div>
         </Tabs>
       </div>
     </motion.div>
