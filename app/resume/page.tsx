@@ -22,7 +22,8 @@ import { motion } from "framer-motion";
 
 const about = {
   title: "About me",
-  description: "Lorem ipsum dolor sit amet, consectetur adip",
+  description:
+    "I am Chiboka Emmanuel, a forward-thinking and quick-witted software developer with exceptional leadership skills. As a fast learner with a passion for acquiring new knowledge, I consistently demonstrate a strong work ethic and punctuality, always meeting or exceeding deadlines. My humor and excellent interpersonal skills enable me to build and maintain strong relationships, making me an effective and engaging team player. I thrive in fast-paced environments and am always eager to embrace new challenges and opportunities for growth.",
   info: [
     {
       fielddName: "Name",
@@ -34,10 +35,10 @@ const about = {
     },
     {
       fielddName: "Experience",
-      fieldValue: "3+",
+      fieldValue: "3+ years",
     },
     {
-      fielddName: "Eamil",
+      fielddName: "Email",
       fieldValue: "Chibokaxavier@gmail.com",
     },
     {
@@ -246,8 +247,30 @@ const Resume = () => {
                 </ScrollArea>
               </div>
             </TabsContent>
-            <TabsContent value="About me" className="w-full">
-              About me
+            <TabsContent
+              value="About me"
+              className="w-full text-center xl:text-left"
+            >
+              <div className="flex flex-col gap-[30px]">
+                <h3 className="text-4xl font-bold  ">{about.title}</h3>
+                <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
+                  {" "}
+                  {about.description}
+                </p>
+                <ul className="mx-auto xl:mx-0 max-w-[620px] grid grid-cols-1 xl:grid-cols-2 gap-y-6">
+                  {about.info.map((item, index) => {
+                    return (
+                      <li
+                        key={index}
+                        className="flex items-center justify-center xl:justify-start gap-4"
+                      >
+                        <span className="text-white/60">{item.fielddName}</span>
+                        <span className="text-xl">{item.fieldValue}</span>
+                      </li>
+                    );
+                  })}
+                </ul>
+              </div>
             </TabsContent>
           </div>
         </Tabs>
