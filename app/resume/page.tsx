@@ -51,7 +51,7 @@ const experience = {
   icon: "/",
   title: "My Experience",
   description:
-    "Since starting my journey in 2020, I've developed responsive and user-friendly interfaces using HTML, CSS, and JavaScript. I've also worked with React and Vue.js, building everything from static websites to complex web applications. This experience has sharpened my problem-solving skills and ability to collaborate with design and backend teams. I stay updated with industry trends to deliver high-quality web solutions.",
+    "Since starting my journey in 2020, I&#39;ve developed responsive and user-friendly interfaces using HTML, CSS, and JavaScript. I&#39;ve also worked with React and Vue.js, building everything from static websites to complex web applications. This experience has sharpened my problem-solving skills and ability to collaborate with design and backend teams. I stay updated with industry trends to deliver high-quality web solutions.",
   items: [
     {
       company: "AroneEnergy",
@@ -74,7 +74,7 @@ const education = {
   icon: "/",
   title: "My Education",
   description:
-    "I graduated from the University of Nigeria with a degree in Metallurgical and Materials Engineering. Despite my engineering background, I have developed a strong proficiency in the tech world. My education has provided me with a solid foundation in problem-solving and analytical thinking, which I've seamlessly applied to my tech endeavors. This unique combination of engineering knowledge and tech skills allows me to approach challenges with a diverse perspective and innovative solutions.",
+    "I graduated from the University of Nigeria with a degree in Metallurgical and Materials Engineering. Despite my engineering background, I have developed a strong proficiency in the tech world. My education has provided me with a solid foundation in problem-solving and analytical thinking, which I&#39;ve seamlessly applied to my tech endeavors. This unique combination of engineering knowledge and tech skills allows me to approach challenges with a diverse perspective and innovative solutions.",
   items: [
     {
       institution: "University of Nigeria, Nsukka ",

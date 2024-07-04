@@ -42,11 +42,11 @@ const contact = () => {
             <form className="flex flex-col gap-6 p-10 bg-[#27272c] rounded-xl">
               <h3 className="text-4xl text-accent">Let us work together</h3>
               <p className="text-white/60">
-                Let's Work Together I'm excited to collaborate on your next
+                Let&#39;s Work Together I&#39;m excited to collaborate on your next
                 project! With my extensive experience in web development, I can
-                help bring your vision to life, whether it's a dynamic
-                application or a sleek, responsive website. Let's create
-                something exceptional together. Reach out, and let's get
+                help bring your vision to life, whether it&#39;s a dynamic
+                application or a sleek, responsive website. Let&#39;s create
+                something exceptional together. Reach out, and let&#39;s get
                 started!
               </p>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
