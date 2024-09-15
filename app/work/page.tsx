@@ -1,5 +1,5 @@
 "use client";
-import { motion } from "framer-motion";
+import { easeIn, motion } from "framer-motion";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import { BsArrowUpRight, BsGithub } from "react-icons/bs";
@@ -12,6 +12,7 @@ import {
 import Link from "next/link";
 import Image from "next/image";
 import { useState } from "react";
+import WorkSliderBtns from "@/components/WorkSliderBtns";
 
 const Work = () => {
   const projects = [
@@ -61,10 +62,17 @@ const Work = () => {
   ];
 
   const [project, setProject] = useState(projects[0]);
+  const handleSlideChange = (swiper: any) => {
+    const currentIndex = swiper.activeIndex;
+    setProject(projects[currentIndex]);
+  };
   return (
     <motion.div
       initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
+      animate={{
+        opacity: 1,
+        transition: { delay: 2.4, duration: 0.4, ease: easeIn },
+      }}
       className="min-h-[80vh] flex flex-col justify-center py-12 xl:px-0"
     >
       <div className="container mx-auto">
@@ -118,7 +126,37 @@ const Work = () => {
               </div>
             </div>
           </div>
-          <div className="w-full xl:w-[50%]">Slider</div>
+          <div className="w-full xl:w-[50%]">
+            <Swiper
+              slidesPerView={1}
+              spaceBetween={30}
+              className="xl:h-[520px] mb-12"
+              onSlideChange={handleSlideChange}
+            >
+              {projects.map((item, index) => {
+                return (
+                  <SwiperSlide key={index} className="w-full">
+                    <div className="h-[460px] relative group justify-center items-center bg-pink-50/20">
+                      <div className="absolute top-0 bottom-0w w-full h-full bg-black/10 z-10 "></div>
+                      <div className="relative w-full h-full">
+                        <Image
+                          src={project.image}
+                          fill
+                          alt=""
+                          className="object-cover"
+                        />
+                      </div>
+                    </div>
+                  </SwiperSlide>
+                );
+              })}
+              <WorkSliderBtns
+                containerStyles="flex gap-2 absolute right-0 bottom-[calc(50%_-_22px)] xl:bottom-0 z-20 w-full justify-between xl:w-max xl:justify-none"
+                btnStyles="bg-accent hover:bg-accent-hover text-primary text-[22px] w-[44px] h-[44px] flex justify-center items-center transition-all"
+                iconStyles=""
+              />
+            </Swiper>
+          </div>
         </div>
       </div>
     </motion.div>
