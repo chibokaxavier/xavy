@@ -1,5 +1,4 @@
 "use client";
-import { Section } from "lucide-react";
 import React from "react";
 import CountUp from "react-countup";
 const Stat = [
