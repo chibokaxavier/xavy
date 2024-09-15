@@ -13,7 +13,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { useState } from "react";
 
-const work = () => {
+const Work = () => {
   const projects = [
     {
       num: "01",
@@ -125,4 +125,4 @@ const work = () => {
   );
 };
 
-export default work;
+export default Work;
