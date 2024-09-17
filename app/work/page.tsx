@@ -29,7 +29,7 @@ const Work = () => {
         { name: "MongoDB" },
         { name: "Express" },
       ],
-      image: "",
+      image: "/careconnect.png",
       live: "https://care-connect-tan.vercel.app/",
       github: "https://github.com/chibokaxavier/CareConnect",
     },
@@ -40,7 +40,7 @@ const Work = () => {
       description:
         "Arone energy specializes in providing innovative power solutions, with a primary focus on the sale and installation of inverters, solar energy systems, and related power equipment. The company is dedicated to helping residential, commercial, and industrial clients overcome energy challenges by offering reliable, sustainable, and cost-effective power backup systems.",
       stack: [{ name: "Html" }, { name: "Jquery" }, { name: "Tailwind CSS" }],
-      image: "",
+      image: "/arone.png",
       live: "https://www.aroneenergy.com/",
       github: "",
     },
@@ -55,9 +55,9 @@ const Work = () => {
         { name: "Firebase" },
         { name: "Tailwind CSS" },
       ],
-      image: "",
+      image: "/crypto.png",
       live: "https://crypto-a8eavo7lv-chibokaxavier.vercel.app/",
-      github: "",
+      github: "https://github.com/chibokaxavier/CoinRadar",
     },
   ];
 
@@ -136,14 +136,14 @@ const Work = () => {
               {projects.map((item, index) => {
                 return (
                   <SwiperSlide key={index} className="w-full">
-                    <div className="h-[460px] relative group justify-center items-center bg-pink-50/20">
-                      <div className="absolute top-0 bottom-0w w-full h-full bg-black/10 z-10 "></div>
+                    <div className="h-[460px] relative group justify-center items-center bg-transparent">
+                      <div className="absolute top-0 bottom-0w w-full h-full  z-10 "></div>
                       <div className="relative w-full h-full">
                         <Image
                           src={project.image}
                           fill
                           alt=""
-                          className="object-cover"
+                          className="object-contain "
                         />
                       </div>
                     </div>
