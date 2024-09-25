@@ -5,6 +5,20 @@ import { Button } from "@/components/ui/button";
 import { FiDownload } from "react-icons/fi";
 
 export default function Home() {
+  const onButtonClick = () => {
+    // using Java Script method to get PDF file
+    fetch("CHIBOKA.pdf").then((response) => {
+      response.blob().then((blob) => {
+        // Creating new object of PDF file
+        const fileURL = window.URL.createObjectURL(blob);
+        // Setting various property values
+        let alink = document.createElement("a");
+        alink.href = fileURL;
+        alink.download = "mainResume.pdf";
+        alink.click();
+      });
+    });
+  };
   return (
     <>
       <section className="h-full">
@@ -25,6 +39,7 @@ export default function Home() {
                   variant="outline"
                   size="sm"
                   className="uppercase  flex items-center gap-2"
+                  onClick={onButtonClick}
                 >
                   <span>Download Resume</span>
                   <FiDownload className="text-xl" />

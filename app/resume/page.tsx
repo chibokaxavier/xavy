@@ -51,8 +51,13 @@ const experience = {
   icon: "/",
   title: "My Experience",
   description:
-    "Since starting my journey in 2020, I&#39;ve developed responsive and user-friendly interfaces using HTML, CSS, and JavaScript. I&#39;ve also worked with React and Vue.js, building everything from static websites to complex web applications. This experience has sharpened my problem-solving skills and ability to collaborate with design and backend teams. I stay updated with industry trends to deliver high-quality web solutions.",
+    "Since starting my journey in 2020, I&apos;ve developed responsive and user-friendly interfaces using HTML, CSS, and JavaScript. I&apos;ve also worked with React and Vue.js, building everything from static websites to complex web applications. This experience has sharpened my problem-solving skills and ability to collaborate with design and backend teams. I stay updated with industry trends to deliver high-quality web solutions.",
   items: [
+    {
+      company: "Bloocode technology",
+      position: "FrontEnd Developer ",
+      duration: "July 2024 - Date",
+    },
     {
       company: "AroneEnergy",
       position: "FrontEnd Developer (Freelance)",
