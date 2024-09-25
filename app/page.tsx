@@ -14,7 +14,7 @@ export default function Home() {
         // Setting various property values
         let alink = document.createElement("a");
         alink.href = fileURL;
-        alink.download = "mainResume.pdf";
+        alink.download = "CHIBOKA.pdf";
         alink.click();
       });
     });
