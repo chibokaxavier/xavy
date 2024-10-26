@@ -56,7 +56,7 @@ const experience = {
     {
       company: "Bloocode technology",
       position: "FrontEnd Developer ",
-      duration: "July 2024 - Date",
+      duration: "July 2024 - October 2024",
     },
     {
       company: "AroneEnergy",
