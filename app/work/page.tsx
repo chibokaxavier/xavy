@@ -139,12 +139,12 @@ const Work = () => {
                     <div className="h-[460px] relative group justify-center items-center bg-transparent">
                       <div className="absolute top-0 bottom-0w w-full h-full  z-10 "></div>
                       <div className="relative w-full h-full">
-                        <Image
+                        {/* <Image
                           src={project.image}
                           fill
                           alt=""
                           className="object-contain "
-                        />
+                        /> */}
                       </div>
                     </div>
                   </SwiperSlide>

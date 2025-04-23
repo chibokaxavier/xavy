@@ -22,3 +22,8 @@
     -webkit-text-stroke: 1px #00ff99;
   }
 }
+
+
+body {
+  font-family: var(--font-jetbrainsMono, monospace) !important;
+}

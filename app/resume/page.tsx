@@ -51,21 +51,26 @@ const experience = {
   icon: "/",
   title: "My Experience",
   description:
-    "Since starting my journey in 2020, I&apos;ve developed responsive and user-friendly interfaces using HTML, CSS, and JavaScript. I&apos;ve also worked with React and Vue.js, building everything from static websites to complex web applications. This experience has sharpened my problem-solving skills and ability to collaborate with design and backend teams. I stay updated with industry trends to deliver high-quality web solutions.",
+    "Since starting my journey in 2020, I have developed responsive and user-friendly interfaces using HTML, CSS, and JavaScript. I&apos;ve also worked with React and Vue.js, building everything from static websites to complex web applications. This experience has sharpened my problem-solving skills and ability to collaborate with design and backend teams. I stay updated with industry trends to deliver high-quality web solutions.",
   items: [
     {
+      company: "Kriapay technology",
+      position: "Software Developer (Frontend) ",
+      duration: "June 2024 - Present",
+    },
+    {
       company: "Bloocode technology",
-      position: "FrontEnd Developer ",
-      duration: "July 2024 - October 2024",
+      position: "Software Develeoper (Intern) ",
+      duration: "July 2024 - November 2024",
     },
     {
       company: "AroneEnergy",
-      position: "FrontEnd Developer (Freelance)",
-      duration: "August 2022 - October 2022",
+      position: "Software Developer (Contract)",
+      duration: "July 2022 - October 2022",
     },
     {
       company: "02 Hero Tech",
-      position: "FrontEnd Developer",
+      position: "Software Developer (intern)",
       duration: "September 2023 - December 2023",
     },
     {
