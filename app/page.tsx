@@ -3,7 +3,8 @@
 import Socials from "@/components/Socials";
 import Stats from "@/components/Stats";
 import { Button } from "@/components/ui/button";
-import { FiDownload } from "react-icons/fi";
+import Link from "next/link";
+import { FiArrowRight, FiDownload } from "react-icons/fi";
 
 export default function Home() {
   const onButtonClick = () => {
@@ -35,16 +36,24 @@ export default function Home() {
                 I excel at crafting elegant digital experiences and i am
                 proficient in various programming languages and technologies{" "}
               </p>
-              <div className="flex flex-col xl:flex-row items-center  gap-8">
-                <Button
-                  variant="outline"
-                  size="sm"
-                  className="uppercase  flex items-center gap-2"
-                  onClick={onButtonClick}
-                >
-                  <span>Download Resume</span>
-                  <FiDownload className="text-xl" />
-                </Button>
+              <div className="flex flex-col items-center xl:items-start gap-6">
+                <div className="flex w-full max-w-[300px] flex-col gap-4 sm:w-auto sm:max-w-none sm:flex-row">
+                  <Button asChild size="sm" className="group uppercase gap-2">
+                    <Link href="/works">
+                      <span>View My Works</span>
+                      <FiArrowRight className="text-xl transition-transform duration-300 group-hover:translate-x-1" />
+                    </Link>
+                  </Button>
+                  <Button
+                    variant="outline"
+                    size="sm"
+                    className="uppercase  flex items-center gap-2"
+                    onClick={onButtonClick}
+                  >
+                    <span>Download Resume</span>
+                    <FiDownload className="text-xl" />
+                  </Button>
+                </div>
                 <div className="mb-6 xl:mb-0">
                   <Socials
                     containerStyles="flex gap-6"
