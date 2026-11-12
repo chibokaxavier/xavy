@@ -314,7 +314,18 @@ const ProjectCard = ({ project, num }: { project: Project; num: string }) => {
       </div>
 
       <div className="mt-auto flex items-center justify-between gap-3 border-t border-white/10 pt-3">
-        <p className="text-xs leading-relaxed text-white/40">{project.stack.join(" · ")}</p>
+        <ul className="flex flex-wrap gap-x-2 text-xs leading-relaxed text-white/40">
+          {project.stack.map((tech, index) => (
+            <li key={tech} className="whitespace-nowrap">
+              {tech}
+              {index < project.stack.length - 1 && (
+                <span aria-hidden="true" className="ml-2 text-white/20">
+                  ·
+                </span>
+              )}
+            </li>
+          ))}
+        </ul>
         <a
           href={project.live}
           target="_blank"
