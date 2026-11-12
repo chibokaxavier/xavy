@@ -4,7 +4,7 @@ import "./globals.css";
 import Header from "@/components/Header";
 import PageTransition from "@/components/PageTransition";
 import StairTransition from "@/components/StairTransition";
-import WakeTechtrail from "@/components/WakeTechtrail";
+import WakeBackends from "@/components/WakeBackends";
 import Head from "next/head";
 
 const jetBrainsMono = JetBrains_Mono({
@@ -25,7 +25,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={jetBrainsMono.variable}>
-        <WakeTechtrail />
+        <WakeBackends />
         <Header />
         <StairTransition />
         <PageTransition>{children}</PageTransition>
