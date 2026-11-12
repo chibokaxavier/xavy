@@ -25,13 +25,13 @@ type WorkSection = {
 
 const personalWorks: Project[] = [
   {
-    title: "Kriapay",
-    category: "Fintech",
+    title: "Arone Energy",
+    category: "Energy",
     description:
-      "Kriapay lets individuals and businesses send money across Africa for less. One multi-currency wallet holds, sends and receives funds, swaps currencies like Naira, Cedis, Leones and Rands instantly at competitive rates, and keeps fraud out with strict KYC. Kriacard, coming soon, will let users pay globally in their local currency.",
-    stack: ["Next.js", "Node.js", "Redux Toolkit", "Tailwind CSS", "MongoDB", "Express"],
-    image: "/work/kriapay.webp",
-    live: "https://kriapay.framer.website/",
+      "Arone Energy keeps Nigerian homes, shops and clinics powered through outages with LUMINAR, its range of solar-ready lithium power systems built in Nigeria, from compact home units to 40kWh business packs. I redesigned the company website to sharpen its user experience and navigation, making the product range easier to explore and order.",
+    stack: ["HTML", "jQuery", "Tailwind CSS"],
+    image: "/work/arone-energy.webp",
+    live: "https://www.aroneenergy.com/",
   },
   {
     title: "SportyCam Football League",
@@ -43,6 +43,15 @@ const personalWorks: Project[] = [
     live: "https://sportycam.com/competitions/sfl",
   },
   {
+    title: "Peer Protocol",
+    category: "DeFi Lending",
+    description:
+      "A decentralized peer-to-peer lending protocol on Starknet. Lenders and borrowers meet in a transparent marketplace, agree terms through a dynamic proposal system and lock them into immutable on-chain deals, backed by a gradual liquidation process. Earn interest or unlock credit, with no middleman.",
+    stack: ["Next.js", "Tailwind CSS", "Starknet"],
+    image: "/work/peer-protocol.webp",
+    live: "https://peer-on-strk.vercel.app/",
+  },
+  {
     title: "Autoparts Haven",
     category: "E-commerce",
     description:
@@ -52,13 +61,13 @@ const personalWorks: Project[] = [
     live: "https://autoparts-haven.vercel.app/",
   },
   {
-    title: "Arone Energy",
-    category: "Energy",
+    title: "Kriapay",
+    category: "Fintech",
     description:
-      "Arone Energy keeps Nigerian homes, shops and clinics powered through outages with LUMINAR, its range of solar-ready lithium power systems built in Nigeria, from compact home units to 40kWh business packs. I redesigned the company website to sharpen its user experience and navigation, making the product range easier to explore and order.",
-    stack: ["HTML", "jQuery", "Tailwind CSS"],
-    image: "/work/arone-energy.webp",
-    live: "https://www.aroneenergy.com/",
+      "Kriapay lets individuals and businesses send money across Africa for less. One multi-currency wallet holds, sends and receives funds, swaps currencies like Naira, Cedis, Leones and Rands instantly at competitive rates, and keeps fraud out with strict KYC. Kriacard, coming soon, will let users pay globally in their local currency.",
+    stack: ["Next.js", "Node.js", "Redux Toolkit", "Tailwind CSS", "MongoDB", "Express"],
+    image: "/work/kriapay.webp",
+    live: "https://kriapay.framer.website/",
   },
   {
     title: "Locate REMS",
@@ -70,15 +79,16 @@ const personalWorks: Project[] = [
     image: "/work/locate-rems.webp",
     live: "https://locate-rems.vercel.app/",
   },
-  {
-    title: "Delidish",
-    category: "Food Delivery",
-    description:
-      "Delidish is a sleek and modern eCommerce food ordering app that allows users to browse a wide variety of cuisines, place orders effortlessly, and have meals delivered straight to their doorsteps. Designed for convenience, it offers real-time order tracking, secure payment options and personalized user profiles.",
-    stack: ["Next.js", "Node.js", "Redux Toolkit", "Tailwind CSS", "MongoDB", "Express"],
-    image: "/work/delidish.webp",
-    live: "https://delidish.vercel.app",
-  },
+  // Delidish and Techtrail are hidden for now. Uncomment both blocks to bring them back.
+  // {
+  //   title: "Delidish",
+  //   category: "Food Delivery",
+  //   description:
+  //     "Delidish is a sleek and modern eCommerce food ordering app that allows users to browse a wide variety of cuisines, place orders effortlessly, and have meals delivered straight to their doorsteps. Designed for convenience, it offers real-time order tracking, secure payment options and personalized user profiles.",
+  //   stack: ["Next.js", "Node.js", "Redux Toolkit", "Tailwind CSS", "MongoDB", "Express"],
+  //   image: "/work/delidish.webp",
+  //   live: "https://delidish.vercel.app",
+  // },
   {
     title: "Smartvest",
     category: "Investing",
@@ -115,15 +125,15 @@ const personalWorks: Project[] = [
     image: "/work/travel-hive.webp",
     live: "https://travelhive-nu.vercel.app",
   },
-  {
-    title: "Techtrail",
-    category: "EdTech",
-    description:
-      "TechTrail is a modern Learning Management System (LMS) designed for seamless, interactive learning. From video lessons to quizzes and certifications, it empowers individuals and teams to upskill efficiently. Start your learning journey with TechTrail today!",
-    stack: ["Next.js", "Node.js", "Redux Toolkit", "Tailwind CSS", "MongoDB", "Express"],
-    image: "/work/techtrail.webp",
-    live: "https://techtraill.vercel.app",
-  },
+  // {
+  //   title: "Techtrail",
+  //   category: "EdTech",
+  //   description:
+  //     "TechTrail is a modern Learning Management System (LMS) designed for seamless, interactive learning. From video lessons to quizzes and certifications, it empowers individuals and teams to upskill efficiently. Start your learning journey with TechTrail today!",
+  //   stack: ["Next.js", "Node.js", "Redux Toolkit", "Tailwind CSS", "MongoDB", "Express"],
+  //   image: "/work/techtrail.webp",
+  //   live: "https://techtraill.vercel.app",
+  // },
 ];
 
 const openSourceWorks: Project[] = [
@@ -191,15 +201,6 @@ const openSourceWorks: Project[] = [
     live: "https://www.cheesepay.xyz/",
   },
   {
-    title: "Peer Protocol",
-    category: "DeFi Lending",
-    description:
-      "A decentralized peer-to-peer lending protocol on Starknet. Lenders and borrowers meet in a transparent marketplace, agree terms through a dynamic proposal system and lock them into immutable on-chain deals, backed by a gradual liquidation process. Earn interest or unlock credit, with no middleman.",
-    stack: ["Next.js", "Tailwind CSS", "Starknet"],
-    image: "/work/peer-protocol.webp",
-    live: "https://peer-on-strk.vercel.app/",
-  },
-  {
     title: "Stellar Creators",
     category: "Creator Marketplace",
     description:
@@ -217,7 +218,7 @@ const sections: WorkSection[] = [
     title: "Personal",
     highlight: "Works",
     intro:
-      "Products and websites I've built, from fintech and sports to e-commerce, energy and edtech.",
+      "Products and websites I've built, from energy and sports to DeFi, e-commerce and fintech.",
     projects: personalWorks,
   },
   {
@@ -226,7 +227,7 @@ const sections: WorkSection[] = [
     title: "Open Source",
     highlight: "Contributions",
     intro:
-      "Live products across the Stellar, Starknet and Ethereum ecosystems where I'm a heavy open-source contributor, shipping code alongside teams building payments, DeFi, security and developer tooling.",
+      "Live products across the Stellar and Ethereum ecosystems where I'm a heavy open-source contributor, shipping code alongside teams building payments, DeFi, security and developer tooling.",
     projects: openSourceWorks,
   },
 ];
@@ -356,7 +357,7 @@ const ProjectSection = ({ id, title, highlight, intro, projects }: WorkSection) 
   </section>
 );
 
-const Work = () => {
+const Works = () => {
   const scrollToSection = (id: string) =>
     document.getElementById(id)?.scrollIntoView({ behavior: "smooth", block: "start" });
 
@@ -370,7 +371,7 @@ const Work = () => {
       className="min-h-[80vh] pb-16 pt-2 xl:pt-6"
     >
       <div className="container mx-auto">
-        <nav aria-label="Work sections" className="mb-8 flex flex-wrap gap-2 xl:mb-12">
+        <nav aria-label="Works sections" className="mb-8 flex flex-wrap gap-2 xl:mb-12">
           {sections.map((section) => (
             <a
               key={section.id}
@@ -396,4 +397,4 @@ const Work = () => {
   );
 };
 
-export default Work;
+export default Works;

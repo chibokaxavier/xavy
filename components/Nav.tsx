@@ -18,8 +18,8 @@ const Nav = () => {
       path: "/resume",
     },
     {
-      name: "work",
-      path: "/work",
+      name: "works",
+      path: "/works",
     },
 
     {
