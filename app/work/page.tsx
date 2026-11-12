@@ -2,7 +2,7 @@
 import { easeIn, motion } from "framer-motion";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
-import { BsArrowUpRight, BsGithub } from "react-icons/bs";
+import { BsArrowUpRight } from "react-icons/bs";
 import {
   Tooltip,
   TooltipContent,
@@ -32,7 +32,6 @@ const Work = () => {
       ],
       image: "/careconnect.png",
       live: "https://kriapay.com",
-      github: "https://github.com/chibokaxavier",
     },
     {
       num: "02",
@@ -43,28 +42,9 @@ const Work = () => {
       stack: [{ name: "Html" }, { name: "Jquery" }, { name: "Tailwind CSS" }],
       image: "/arone.png",
       live: "https://www.aroneenergy.com/",
-      github: "",
     },
     {
       num: "03",
-      category: "Fullstack",
-      title: "Techtrail",
-      description:
-        "TechTrail is a modern Learning Management System (LMS) designed for seamless, interactive learning. From video lessons to quizzes and certifications, it empowers individuals and teams to upskill efficiently. Start your learning journey with TechTrail today!",
-      stack: [
-        { name: "Next.js" },
-        { name: "Node.js" },
-        { name: "Redux Toolkit" },
-        { name: "Tailwind CSS" },
-        { name: "MongoDB" },
-        { name: "Express" },
-      ],
-      image: "/careconnect.png",
-      live: "https://techtraill.vercel.app",
-      github: "https://github.com/chibokaxavier/techtrail",
-    },
-    {
-      num: "04",
       category: "Fullstack",
       title: "Delidish",
       description:
@@ -79,10 +59,9 @@ const Work = () => {
       ],
       image: "/careconnect.png",
       live: "https://delidish.vercel.app",
-      github: "https://github.com/chibokaxavier/delidish",
     },
     {
-      num: "05",
+      num: "04",
       category: "Frontend",
       title: "Smartvest",
       description:
@@ -90,10 +69,9 @@ const Work = () => {
       stack: [{ name: "Next.js" }, { name: "Tailwind CSS" }],
       image: "/careconnect.png",
       live: "https://smartvest.vercel.app",
-      github: "https://github.com/chibokaxavier/smartvest",
     },
     {
-      num: "06",
+      num: "05",
       category: "Frontend",
       title: "Tooniverse",
       description:
@@ -101,10 +79,9 @@ const Work = () => {
       stack: [{ name: "Next.js" }, { name: "Tailwind CSS" }],
       image: "/careconnect.png",
       live: "https://tooniverse.vercel.app",
-      github: "https://github.com/chibokaxavier/tooniverse",
     },
     {
-      num: "07",
+      num: "06",
       category: "Frontend",
       title: "Metaverse",
       description:
@@ -112,10 +89,9 @@ const Work = () => {
       stack: [{ name: "Next.js" }, { name: "Tailwind CSS" }],
       image: "/careconnect.png",
       live: "https://metaverse-blond-phi.vercel.app",
-      github: "https://github.com/chibokaxavier/metaverse",
     },
     {
-      num: "08",
+      num: "07",
       category: "Frontend",
       title: "Travel-Hive",
       description:
@@ -123,7 +99,23 @@ const Work = () => {
       stack: [{ name: "Next.js" }, { name: "Tailwind CSS" }],
       image: "/careconnect.png",
       live: "https://travelhive-nu.vercel.app",
-      github: "https://github.com/chibokaxavier/travel-hive",
+    },
+    {
+      num: "08",
+      category: "Fullstack",
+      title: "Techtrail",
+      description:
+        "TechTrail is a modern Learning Management System (LMS) designed for seamless, interactive learning. From video lessons to quizzes and certifications, it empowers individuals and teams to upskill efficiently. Start your learning journey with TechTrail today!",
+      stack: [
+        { name: "Next.js" },
+        { name: "Node.js" },
+        { name: "Redux Toolkit" },
+        { name: "Tailwind CSS" },
+        { name: "MongoDB" },
+        { name: "Express" },
+      ],
+      image: "/careconnect.png",
+      live: "https://techtraill.vercel.app",
     },
   ];
 
@@ -181,18 +173,6 @@ const Work = () => {
                     </Tooltip>
                   </TooltipProvider>
                 </Link>
-                <a href={project.github} target="_blank">
-                  <TooltipProvider delayDuration={100}>
-                    <Tooltip>
-                      <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group ">
-                        <BsGithub className="text-white text-3xl  group-hover:text-accent" />
-                      </TooltipTrigger>
-                      <TooltipContent>
-                        <p>Github repository</p>
-                      </TooltipContent>
-                    </Tooltip>
-                  </TooltipProvider>
-                </a>
               </div>
             </div>
           </div>
